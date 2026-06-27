@@ -563,7 +563,7 @@ input, textarea, select { font-family: inherit; }
   display: flex;
   flex-direction: column;
 }
-.hero__title-line { display: block; }
+.hero__title-line { display: block; white-space: nowrap; }
 .hero__title-line--accent {
   background: linear-gradient(90deg, var(--clr-primary), var(--clr-accent));
   -webkit-background-clip: text;
