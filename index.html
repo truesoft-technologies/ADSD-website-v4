@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ADSD Steel Technical Services Contracting L.L.C – Structural Steel Fabrication, Equipment Installation, Pipe Fabrication, and Building Maintenance in Dubai, UAE." />
+  <meta name="keywords" content="steel fabrication Dubai, structural steel UAE, pipe installation, equipment installation, building maintenance, ADSD" />
+  <title>ADSD Steel Technical Services Contracting L.L.C</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet (Light Theme) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       CUSTOM CURSOR (INVERSION EFFECT)
+  ============================================================ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ============================================================
+       LOADER
+  ============================================================ -->
+  <div class="loader" id="loader">
+    <div class="loader__inner">
+      <div class="loader__logo">
+        <span class="loader__a">A</span><span class="loader__d">D</span><span class="loader__s">S</span><span class="loader__d2">D</span>
+      </div>
+      <div class="loader__bar"><div class="loader__fill"></div></div>
+      <p class="loader__text">Steel Technical Services</p>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="nav__logo-text">ADSD</span>
+        <span class="nav__logo-sub">Steel Technical Services</span>
+      </a>
+
+      <ul class="nav__list" id="navList">
+        <li><a href="#home"     class="nav__link" data-section="home">Home</a></li>
+        <li><a href="#about"    class="nav__link" data-section="about">About</a></li>
+        <li><a href="#services" class="nav__link" data-section="services">Services</a></li>
+        <li><a href="#projects" class="nav__link" data-section="projects">Projects</a></li>
+        <li><a href="#why-us"   class="nav__link" data-section="why-us">Why Us</a></li>
+        <li><a href="#reviews"  class="nav__link" data-section="reviews">Reviews</a></li>
+        <li><a href="#contact"  class="nav__link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <a href="#contact" class="btn btn--primary nav__cta">Get a Quote</a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="home">
+    <!-- Particle canvas -->
+    <canvas class="hero__particles" id="heroCanvas"></canvas>
+
+    <!-- Background grid overlay -->
+    <div class="hero__grid"></div>
+
+    <!-- Animated steel beam lines -->
+    <div class="hero__beams">
+      <div class="hero__beam hero__beam--1"></div>
+      <div class="hero__beam hero__beam--2"></div>
+      <div class="hero__beam hero__beam--3"></div>
+    </div>
+
+    <div class="hero__content container">
+      <div class="hero__badge reveal-up" data-delay="0">
+        <span class="hero__badge-dot"></span>
+        Dubai, UAE &nbsp;·&nbsp; Est. 1999
+      </div>
+
+      <h1 class="hero__title">
+        <span class="hero__title-line reveal-up" data-delay="100">Building the <span class="hero__title-line--accent">Steel Backbone</span></span>
+        <span class="hero__title-line reveal-up" data-delay="200">of the UAE</span>
+      </h1>
+
+      <p class="hero__desc reveal-up" data-delay="400">
+        ADSD Steel Technical Services Contracting L.L.C delivers precision structural steel fabrication, equipment installation, and industrial maintenance solutions across the Emirates.
+      </p>
+
+      <div class="hero__actions reveal-up" data-delay="500">
+        <a href="#services" class="btn btn--primary btn--lg">
+          <span>Explore Services</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <a href="#projects" class="btn btn--ghost btn--lg">
+          <span>View Projects</span>
+        </a>
+      </div>
+
+      <div class="hero__stats reveal-up" data-delay="600">
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="25">0</span><span class="hero__stat-plus">+</span>
+          <span class="hero__stat-label">Years Experience</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="10">0</span><span class="hero__stat-plus">+</span>
+          <span class="hero__stat-label">Major Projects</span>
+        </div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat">
+          <span class="hero__stat-num" data-count="6">0</span>
+          <span class="hero__stat-label">Service Categories</span>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll">
+      <span class="hero__scroll-text">Scroll Down</span>
+      <span class="hero__scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ============================================================
+       TICKER STRIP
+  ============================================================ -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span>Structural Steel Fabrication</span>
+      <span class="ticker__dot">✦</span>
+      <span>Equipment Installation</span>
+      <span class="ticker__dot">✦</span>
+      <span>Pipe Fabrication & Installation</span>
+      <span class="ticker__dot">✦</span>
+      <span>Miscellaneous Metal Work</span>
+      <span class="ticker__dot">✦</span>
+      <span>Manpower Supply</span>
+      <span class="ticker__dot">✦</span>
+      <span>Anchor Bolts & Fasteners</span>
+      <span class="ticker__dot">✦</span>
+      <span>Building Maintenance</span>
+      <span class="ticker__dot">✦</span>
+      <span>Supply Service</span>
+      <span class="ticker__dot">✦</span>
+      <!-- Duplicate for seamless loop -->
+      <span>Structural Steel Fabrication</span>
+      <span class="ticker__dot">✦</span>
+      <span>Equipment Installation</span>
+      <span class="ticker__dot">✦</span>
+      <span>Pipe Fabrication & Installation</span>
+      <span class="ticker__dot">✦</span>
+      <span>Miscellaneous Metal Work</span>
+      <span class="ticker__dot">✦</span>
+      <span>Manpower Supply</span>
+      <span class="ticker__dot">✦</span>
+      <span>Anchor Bolts & Fasteners</span>
+      <span class="ticker__dot">✦</span>
+      <span>Building Maintenance</span>
+      <span class="ticker__dot">✦</span>
+      <span>Supply Service</span>
+      <span class="ticker__dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ABOUT
+  ============================================================ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+
+        <!-- Left: Visual block -->
+        <div class="about__visual reveal-left">
+          <div class="about__img-wrap">
+            <div class="about__img about__img--main" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80')"></div>
+            <div class="about__img about__img--accent" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80')"></div>
+          </div>
+          <div class="about__badge-card">
+            <i class="fa-solid fa-certificate"></i>
+            <div>
+              <strong>Officially Licensed</strong>
+              <span>Dubai &amp; Sharjah DED</span>
+            </div>
+          </div>
+          <div class="about__years">
+            <span class="about__years-num">25</span>
+            <span class="about__years-label">Years of<br>Excellence</span>
+          </div>
+        </div>
+
+        <!-- Right: Content -->
+        <div class="about__content reveal-right">
+          <div class="section__label">Who We Are</div>
+          <h2 class="section__title">Your Trusted Partner in <span class="text-accent">Steel Engineering</span></h2>
+          <p class="about__text">
+            ADSD Steel Technical Services Contracting L.L.C is a Dubai-based industrial contracting company with over two decades of proven expertise in the steel fabrication and construction sector. Our extensive experience in the industry has been fundamental in securing work from major corporate companies across the UAE.
+          </p>
+          <p class="about__text">
+            We are committed to supplying exceptional quality products and services in the pre-fabricated construction industry by developing and employing the most advanced information, engineering, manufacturing, and delivery systems available. For any kind of building project, our friendly and experienced team is always ready to assist you with a free quote.
+          </p>
+
+          <div class="about__pillars">
+            <div class="about__pillar">
+              <div class="about__pillar-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div>
+                <strong>Quality Assured</strong>
+                <span>Advanced manufacturing & delivery systems</span>
+              </div>
+            </div>
+            <div class="about__pillar">
+              <div class="about__pillar-icon"><i class="fa-solid fa-users-gear"></i></div>
+              <div>
+                <strong>In-House Execution</strong>
+                <span>No outsourcing — our own team carries out all work</span>
+              </div>
+            </div>
+            <div class="about__pillar">
+              <div class="about__pillar-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <strong>UAE-Wide Coverage</strong>
+                <span>Active projects in Dubai, Sharjah &amp; Abu Dhabi</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn--primary">
+            <span>Request Free Quote</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES
+  ============================================================ -->
+  <section class="services section" id="services">
+    <div class="services__bg-text">SERVICES</div>
+    <div class="container">
+      <div class="section__header reveal-up">
+        <div class="section__label">What We Do</div>
+        <h2 class="section__title">Our <span class="text-accent">Core Expertise</span></h2>
+        <p class="section__desc">Extensive experience in the industry has been fundamental in securing work from corporate companies. We have segmented our main objectives into six core categories.</p>
+      </div>
+
+      <div class="services__grid">
+
+        <div class="service-card reveal-up" data-delay="0">
+          <div class="service-card__icon">
+            <i class="fa-solid fa-industry"></i>
+          </div>
+          <div class="service-card__num">01</div>
+          <h3 class="service-card__title">Structural Steel Fabrication &amp; Installation</h3>
+          <p class="service-card__text">Precision fabrication and on-site installation of structural steel frameworks for industrial, commercial, and utility facilities across the UAE.</p>
+          <div class="service-card__line"></div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="100">
+          <div class="service-card__icon">
+            <i class="fa-solid fa-gear"></i>
+          </div>
+          <div class="service-card__num">02</div>
+          <h3 class="service-card__title">Equipment Installation</h3>
+          <p class="service-card__text">Professional installation of heavy industrial equipment and machinery, ensuring safe integration within structural environments.</p>
+          <div class="service-card__line"></div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="200">
+          <div class="service-card__icon">
+            <i class="fa-solid fa-pipe-section"></i>
+          </div>
+          <div class="service-card__num">03</div>
+          <h3 class="service-card__title">Pipe Fabrication, Installation &amp; Tanks</h3>
+          <p class="service-card__text">Full-scope pipe fabrication, inline equipment installation, and tanks installation for industrial and process plant environments.</p>
+          <div class="service-card__line"></div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="300">
+          <div class="service-card__icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
+          <div class="service-card__num">04</div>
+          <h3 class="service-card__title">Miscellaneous Metal Work</h3>
+          <p class="service-card__text">Custom metalwork including handrails, aluminium louvers, car parking sheds, substation chequer plates, and bespoke fabrication.</p>
+          <div class="service-card__line"></div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="400">
+          <div class="service-card__icon">
+            <i class="fa-solid fa-hard-hat"></i>
+          </div>
+          <div class="service-card__num">05</div>
+          <h3 class="service-card__title">Manpower Supply</h3>
+          <p class="service-card__text">Skilled and semi-skilled manpower supply for construction and industrial projects, with trained personnel ready for immediate deployment.</p>
+          <div class="service-card__line"></div>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="500">
+          <div class="service-card__icon">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="service-card__num">06</div>
+          <h3 class="service-card__title">Anchor Bolts &amp; Fasteners Supply</h3>
+          <p class="service-card__text">Reliable supply of anchor bolts, fasteners, and structural fixings to meet the precise specifications of your construction projects.</p>
+          <div class="service-card__line"></div>
+        </div>
+
+      </div>
+
+      <!-- Extended services row -->
+      <div class="services__extended">
+        <div class="service-ext reveal-left">
+          <div class="service-ext__icon"><i class="fa-solid fa-boxes-stacked"></i></div>
+          <div class="service-ext__content">
+            <h3>Supply Service</h3>
+            <p>Committed to supplying exceptional quality products and services in the pre-fabricated construction industry by developing and employing the most advanced information, engineering, manufacturing, and delivery systems available. Contact our friendly sales staff for a free quote via phone, fax, or email.</p>
+          </div>
+        </div>
+        <div class="service-ext reveal-right">
+          <div class="service-ext__icon"><i class="fa-solid fa-building-shield"></i></div>
+          <div class="service-ext__content">
+            <h3>Building Maintenance</h3>
+            <p>Our in-house staff performs all cleaning and maintenance, trash and recycling management, and handyman work. Our trained property managers schedule and monitor all work we perform. We are always fully accountable for these services, as our own team carries out the work — without outsourcing or sub-contracting.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS
+  ============================================================ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section__header reveal-up">
+        <div class="section__label">Our Work</div>
+        <h2 class="section__title">Project <span class="text-accent">Portfolio</span></h2>
+        <p class="section__desc">A selection of our completed and ongoing projects across the UAE, executed in partnership with leading contractors and corporate clients.</p>
+      </div>
+
+      <!-- Project gallery grid -->
+      <div class="projects__gallery">
+        <div class="gallery-item gallery-item--wide reveal-up" data-delay="0">
+          <div class="gallery-item__img" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80')"></div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__tag">Structural Steel</span>
+            <h4>Industrial Steel Framework</h4>
+            <p>Hamriyah Free Zone, Sharjah</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="100">
+          <div class="gallery-item__img" style="background-image: url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80')"></div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__tag">Equipment</span>
+            <h4>Equipment Installation</h4>
+            <p>ICAD-1, Mussafah, Abu Dhabi</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="200">
+          <div class="gallery-item__img" style="background-image: url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=80')"></div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__tag">Metal Work</span>
+            <h4>Car Parking Shade Structures</h4>
+            <p>Kizad, Abu Dhabi</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal-up" data-delay="300">
+          <div class="gallery-item__img" style="background-image: url('https://images.unsplash.com/photo-1590479773265-7464e5d48118?w=600&q=80')"></div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__tag">Fabrication</span>
+            <h4>Steel Member Fabrication</h4>
+            <p>Khalid Port, Sharjah</p>
+          </div>
+        </div>
+        <div class="gallery-item gallery-item--wide reveal-up" data-delay="400">
+          <div class="gallery-item__img" style="background-image: url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80')"></div>
+          <div class="gallery-item__overlay">
+            <span class="gallery-item__tag">Warehouse</span>
+            <h4>Industrial Warehouse Structure</h4>
+            <p>CMW, Abu Dhabi</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects reference table -->
+      <div class="projects__table-wrap reveal-up">
+        <h3 class="projects__table-title">Project References</h3>
+        <div class="projects__table-scroll">
+          <table class="projects__table">
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Project / Location</th>
+                <th>Main Contractor / Client</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01</td>
+                <td>Hamriyah Free Zone, Sharjah</td>
+                <td>MBS – Meemar Building System / SEWA</td>
+              </tr>
+              <tr>
+                <td>02</td>
+                <td>Ind-18, Sharjah</td>
+                <td>Al Aswar Cont. LLC</td>
+              </tr>
+              <tr>
+                <td>03</td>
+                <td>Khalid Port, Sharjah</td>
+                <td>Al Aamedah Al Maseyah / Lamprel</td>
+              </tr>
+              <tr>
+                <td>04</td>
+                <td>CMW, Abu Dhabi</td>
+                <td>MBS – Meemar Building System / Six Sigma</td>
+              </tr>
+              <tr>
+                <td>05</td>
+                <td>Hamriyah Free Zone, Sharjah</td>
+                <td>Al Aamedah Al Maseyah / Lamprel</td>
+              </tr>
+              <tr>
+                <td>06</td>
+                <td>ICAD-1, Mussafah, Abu Dhabi</td>
+                <td>MBS – Meemar Building System / Al Ghurair Iron &amp; Steel</td>
+              </tr>
+              <tr>
+                <td>07</td>
+                <td>ICAD-1, Mussafah, Abu Dhabi</td>
+                <td>MBS – Meemar Building System / Al Ghurair Iron &amp; Steel</td>
+              </tr>
+              <tr>
+                <td>08</td>
+                <td>Kizad, Abu Dhabi</td>
+                <td>Capital Engineering Consultant / Cloud Steel Co.</td>
+              </tr>
+              <tr>
+                <td>09</td>
+                <td>ICAD-1, Mussafah, Abu Dhabi</td>
+                <td>MBS – Meemar Building System / Al Ghurair Iron &amp; Steel</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>ICAD-1, Mussafah, Abu Dhabi</td>
+                <td>MBS – Meemar Building System</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY CHOOSE US
+  ============================================================ -->
+  <section class="why-us section" id="why-us">
+    <div class="why-us__bg"></div>
+    <div class="container">
+      <div class="section__header reveal-up">
+        <div class="section__label">Our Advantage</div>
+        <h2 class="section__title">Why Choose <span class="text-accent">ADSD</span></h2>
+      </div>
+
+      <div class="why-us__grid">
+
+        <div class="why-card reveal-up" data-delay="0">
+          <div class="why-card__icon-wrap">
+            <i class="fa-solid fa-medal"></i>
+          </div>
+          <h3>Proven Track Record</h3>
+          <p>Over 25 years of industry experience securing contracts with major corporate companies across the UAE, including Hamriyah Free Zone, ICAD-1, and Kizad projects.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-delay="100">
+          <div class="why-card__icon-wrap">
+            <i class="fa-solid fa-people-group"></i>
+          </div>
+          <h3>In-House Team Only</h3>
+          <p>We never outsource or sub-contract. Our own trained team carries out every project, ensuring full accountability, quality control, and consistent delivery standards.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-delay="200">
+          <div class="why-card__icon-wrap">
+            <i class="fa-solid fa-microchip"></i>
+          </div>
+          <h3>Advanced Systems</h3>
+          <p>We employ the most advanced information, engineering, manufacturing, and delivery systems available in the pre-fabricated construction industry.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-delay="300">
+          <div class="why-card__icon-wrap">
+            <i class="fa-solid fa-file-contract"></i>
+          </div>
+          <h3>Fully Licensed &amp; Registered</h3>
+          <p>Officially licensed by the Government of Dubai Department of Economic Development (DED) and the Sharjah Economic Development Department, with active TRN registration.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-delay="400">
+          <div class="why-card__icon-wrap">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3>Free Quotation Service</h3>
+          <p>Our friendly sales staff are always available to assist you via phone, fax, and email. We provide free, no-obligation quotes for any kind of building or industrial project.</p>
+        </div>
+
+        <div class="why-card reveal-up" data-delay="500">
+          <div class="why-card__icon-wrap">
+            <i class="fa-solid fa-map-location-dot"></i>
+          </div>
+          <h3>UAE-Wide Presence</h3>
+          <p>Active project delivery across Dubai, Sharjah, and Abu Dhabi, with a strong network of corporate clients and main contractors throughout the Emirates.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CLIENT REVIEWS
+  ============================================================ -->
+  <section class="reviews section" id="reviews">
+    <div class="container">
+
+      <!-- Section header -->
+      <div class="reviews__header reveal-up">
+        <div class="reviews__header-left">
+          <div class="section__label">05 — Client Reviews</div>
+          <h2 class="reviews__title">Rate Your <span class="text-accent">Experience</span></h2>
+        </div>
+        <div class="reviews__header-right">
+          <p>Leave a review — it appears below instantly</p>
+        </div>
+      </div>
+
+      <!-- Main panel -->
+      <div class="reviews__panel reveal-up">
+
+        <!-- Left: Overall score -->
+        <div class="reviews__score">
+          <div class="reviews__score-top">
+            <span class="reviews__score-num" id="reviewsAvgScore">5.0</span>
+            <div class="reviews__score-stars" id="reviewsAvgStars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="reviews__score-count" id="reviewsCount">3 REVIEWS</span>
+          </div>
+          <div class="reviews__bars" id="reviewsBars">
+            <div class="reviews__bar-row">
+              <span>5</span>
+              <div class="reviews__bar-track"><div class="reviews__bar-fill" style="width:100%"></div></div>
+              <span id="bar5Count">3</span>
+            </div>
+            <div class="reviews__bar-row">
+              <span>4</span>
+              <div class="reviews__bar-track"><div class="reviews__bar-fill" style="width:0%"></div></div>
+              <span id="bar4Count">0</span>
+            </div>
+            <div class="reviews__bar-row">
+              <span>3</span>
+              <div class="reviews__bar-track"><div class="reviews__bar-fill" style="width:0%"></div></div>
+              <span id="bar3Count">0</span>
+            </div>
+            <div class="reviews__bar-row">
+              <span>2</span>
+              <div class="reviews__bar-track"><div class="reviews__bar-fill" style="width:0%"></div></div>
+              <span id="bar2Count">0</span>
+            </div>
+            <div class="reviews__bar-row">
+              <span>1</span>
+              <div class="reviews__bar-track"><div class="reviews__bar-fill" style="width:0%"></div></div>
+              <span id="bar1Count">0</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Submit form -->
+        <div class="reviews__form-wrap">
+          <form class="reviews__form" id="reviewForm" novalidate>
+            <div class="reviews__form-row">
+              <div class="reviews__form-group">
+                <label for="reviewName">Name</label>
+                <input type="text" id="reviewName" placeholder="Your name" required />
+              </div>
+              <div class="reviews__form-group">
+                <label for="reviewCompany">Company <span>(optional)</span></label>
+                <input type="text" id="reviewCompany" placeholder="Company / contractor" />
+              </div>
+            </div>
+            <div class="reviews__form-group">
+              <label>Rating</label>
+              <div class="reviews__star-picker" id="starPicker" role="group" aria-label="Rating">
+                <button type="button" class="reviews__star" data-val="1" aria-label="1 star"><i class="fa-regular fa-star"></i></button>
+                <button type="button" class="reviews__star" data-val="2" aria-label="2 stars"><i class="fa-regular fa-star"></i></button>
+                <button type="button" class="reviews__star" data-val="3" aria-label="3 stars"><i class="fa-regular fa-star"></i></button>
+                <button type="button" class="reviews__star" data-val="4" aria-label="4 stars"><i class="fa-regular fa-star"></i></button>
+                <button type="button" class="reviews__star" data-val="5" aria-label="5 stars"><i class="fa-regular fa-star"></i></button>
+              </div>
+            </div>
+            <div class="reviews__form-group">
+              <label for="reviewText">Review</label>
+              <textarea id="reviewText" rows="4" placeholder="Tell us about working with ADSD..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary reviews__submit">
+              <span>Submit Review</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Review cards -->
+      <div class="reviews__cards" id="reviewsCards">
+
+        <div class="review-card reveal-up" data-delay="0">
+          <div class="review-card__header">
+            <div class="review-card__avatar">M—</div>
+            <div class="review-card__meta">
+              <strong>MBS – MEEMAR BUILDING SYSTEM</strong>
+              <span>Main Contractor</span>
+            </div>
+          </div>
+          <div class="review-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-card__text">ADSD erected our Hamriyah warehouse frame ahead of schedule and never once handed the work to a sub-contractor. Their property manager knew every weld on site.</p>
+          <span class="review-card__date">MAY 12, 2026</span>
+        </div>
+
+        <div class="review-card reveal-up" data-delay="100">
+          <div class="review-card__header">
+            <div class="review-card__avatar">L</div>
+            <div class="review-card__meta">
+              <strong>LAMPRELL</strong>
+              <span>Site Engineer</span>
+            </div>
+          </div>
+          <div class="review-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-card__text">In-house crews, in-house accountability. We never chased a third party for a fix — ADSD owned every task on the asset.</p>
+          <span class="review-card__date">APR 28, 2026</span>
+        </div>
+
+        <div class="review-card reveal-up" data-delay="200">
+          <div class="review-card__header">
+            <div class="review-card__avatar">AG</div>
+            <div class="review-card__meta">
+              <strong>AL GHURAIR IRON &amp; STEEL</strong>
+              <span>Facilities Manager</span>
+            </div>
+          </div>
+          <div class="review-card__stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-card__text">Their maintenance division keeps our ICAD facility running — scheduled, monitored and verified by people who actually answer the phone.</p>
+          <span class="review-card__date">MAR 9, 2026</span>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA BAND
+  ============================================================ -->
+  <section class="cta-band">
+    <div class="cta-band__bg"></div>
+    <div class="container">
+      <div class="cta-band__inner reveal-up">
+        <div class="cta-band__text">
+          <h2>Ready to Start Your Next Steel Project?</h2>
+          <p>Contact our team today for a free consultation and quotation. We serve industrial, commercial, and utility clients across the UAE.</p>
+        </div>
+        <div class="cta-band__actions">
+          <a href="tel:+971569968611" class="btn btn--primary btn--lg">
+            <i class="fa-solid fa-phone"></i>
+            <span>+971 56 996 8611</span>
+          </a>
+          <a href="#contact" class="btn btn--ghost btn--lg">
+            <span>Send a Message</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+  ============================================================ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section__header reveal-up">
+        <div class="section__label">Get In Touch</div>
+        <h2 class="section__title">Contact <span class="text-accent">Us</span></h2>
+        <p class="section__desc">Reach out to our team for a free quote, project consultation, or any enquiry. We're always ready to assist.</p>
+      </div>
+
+      <div class="contact__grid">
+
+        <!-- Info cards -->
+        <div class="contact__info reveal-left">
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="contact-info-card__label">Phone</span>
+              <a href="tel:+971569968611" class="contact-info-card__value">+971 56 996 8611</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span class="contact-info-card__label">Email</span>
+              <a href="mailto:ads.techdxb@gmail.com" class="contact-info-card__value">ads.techdxb@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span class="contact-info-card__label">Address</span>
+              <span class="contact-info-card__value">P.O.Box: 282615, Dubai, UAE</span>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon"><i class="fa-solid fa-receipt"></i></div>
+            <div>
+              <span class="contact-info-card__label">TRN</span>
+              <span class="contact-info-card__value">104023207400003</span>
+            </div>
+          </div>
+
+          <div class="contact__credentials">
+            <div class="credential-badge">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>Dubai DED Licensed</span>
+            </div>
+            <div class="credential-badge">
+              <i class="fa-solid fa-building-columns"></i>
+              <span>Sharjah DED Licensed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact form -->
+        <div class="contact__form-wrap reveal-right">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+971 XX XXX XXXX" />
+              </div>
+              <div class="form-group">
+                <label for="service">Service Required</label>
+                <select id="service" name="service">
+                  <option value="" disabled selected>Select a service</option>
+                  <option>Structural Steel Fabrication &amp; Installation</option>
+                  <option>Equipment Installation</option>
+                  <option>Pipe Fabrication &amp; Installation</option>
+                  <option>Miscellaneous Metal Work</option>
+                  <option>Manpower Supply</option>
+                  <option>Anchor Bolts &amp; Fasteners Supply</option>
+                  <option>Supply Service</option>
+                  <option>Building Maintenance</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group form-group--full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Describe your project or enquiry..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg btn--full">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>Thank you! Your message has been sent. We'll be in touch shortly.</span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="container">
+        <div class="footer__grid">
+
+          <div class="footer__brand">
+            <a href="#home" class="footer__logo">
+              <span class="nav__logo-text">ADSD</span>
+              <span class="nav__logo-sub">Steel Technical Services</span>
+            </a>
+            <p class="footer__tagline">Building the steel backbone of the UAE since 1999. Precision fabrication, expert installation, and industrial excellence.</p>
+            <div class="footer__contact-quick">
+              <a href="tel:+971569968611"><i class="fa-solid fa-phone"></i> +971 56 996 8611</a>
+              <a href="mailto:ads.techdxb@gmail.com"><i class="fa-solid fa-envelope"></i> ads.techdxb@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="footer__links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#why-us">Why Choose Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__services">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#services">Structural Steel Fabrication</a></li>
+              <li><a href="#services">Equipment Installation</a></li>
+              <li><a href="#services">Pipe Fabrication &amp; Installation</a></li>
+              <li><a href="#services">Miscellaneous Metal Work</a></li>
+              <li><a href="#services">Manpower Supply</a></li>
+              <li><a href="#services">Building Maintenance</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__address">
+            <h4>Company Info</h4>
+            <p><i class="fa-solid fa-location-dot"></i> P.O.Box: 282615<br>Dubai, UAE</p>
+            <p><i class="fa-solid fa-receipt"></i> TRN: 104023207400003</p>
+            <p><i class="fa-solid fa-id-card"></i> License No.: 1050680</p>
+            <p><i class="fa-solid fa-building-columns"></i> Reg. No.: 1812455</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; <span id="footerYear"></span> ADSD Steel Technical Services Contracting L.L.C. All rights reserved.</p>
+        <p>Registered in Dubai, UAE &nbsp;·&nbsp; Department of Economic Development</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
